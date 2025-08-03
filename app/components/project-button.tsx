@@ -45,7 +45,7 @@ function Content() {
 
   const { user, project: activeProject } = useLoaderData<typeof loader>();
   const { query } = useProjects();
-  let { data: projects, isLoading } = query;
+  const { data: projects, isLoading } = query;
 
   const popover = usePopoverContext();
 
@@ -79,8 +79,6 @@ function Content() {
       </Container>
     );
   }
-
-  isLoading = true;
 
   return (
     <Container>
