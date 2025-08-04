@@ -86,9 +86,8 @@ function Content() {
         <ul className="p-1">
           <li>
             {isLoading ? (
-              <div className="flex flex-col items-center justify-center py-4">
-                <div className="i-svg-spinners-90-ring-with-bg text-xl" />
-				<p>Loading projects...</p>
+              <div className="flex flex-col items-center justify-center py-2">
+                <div className="i-svg-spinners-3-dots-fade text-xl" />
               </div>
             ) : (
               projects?.map((project) => (
